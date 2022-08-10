@@ -1,0 +1,19 @@
+.head{
+    width:100%;
+    font-size:22px;
+    margin:0px;
+    box-shadow:5px 5px 5px dimgray;
+    }
+
+.in{
+font-size:13px; 
+   }
+
+body{
+background-size:cover;
+}
+
+canvas{
+border-radius:15px;
+border-color:brown;
+}
