@@ -10,8 +10,8 @@ ry=0;
 rs=0;
 
 function preload(){
-song1=loadSound("music.mp3");
-song2=loadSound("music2.mp3");
+song1=loadSound("music.mp3");//harry potter
+song2=loadSound("music2.mp3");//peter pan
 }
 
 function setup(){
@@ -29,14 +29,14 @@ posenet.on("pose", gotposes);
         peterpan=song2.isPlaying();
         console.log(peterpan);
 
-        fill("red")
-        stroke("black")
+        fill("red");
+        stroke("black");
 
 
         if(ls > 0.2){
         circle(lx,ly,20);
         song1.stop();
-        if(song2 == false){
+        if(peterpan == false){
         song2.play();
         document.getElementById("song").innerHTML="Song Name: Peter Pan Theme Song";
         }
@@ -48,7 +48,7 @@ posenet.on("pose", gotposes);
         if(rs > 0.2){
         circle(rx,ry,20);
         song2.stop();
-        if(song1 == false){
+        if(harrypotter == false){
         song1.play();
         document.getElementById("song").innerHTML="Song Name: Harry Potter Theme Song";
         }
@@ -73,5 +73,6 @@ posenet.on("pose", gotposes);
                 console.log("leftwristscore="+ls);
                 console.log("rightwristx="+rx);
                 console.log("rightwristx="+ry);
+                console.log("rightwristscore="+rs);
                 }
                 }
