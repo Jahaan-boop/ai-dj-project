@@ -15,5 +15,6 @@ background-size:cover;
 
 canvas{
 border-radius:15px;
-border-color:brown;
+border:2px solid white;
+margin-top:15px;
 }
